@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.coin-space {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin-flip-container {
+    width: 55rem;
+    height: 50rem;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: .1rem .1rem 5rem 0 #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.coin-flip-container .coin {
+    transform: translateY(50rem);
+    animation-name: topAnimation;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.coin-flip-container img {
+    width: 10rem;
+    height: 10rem;
+    animation-name: rotatingAnimation;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+}
+
+p {
+    font-size: 3rem;
+    font-family:cursive;
+}
+
+.lottery-winner span {
+    color: rgb(54, 207, 49);
+    font-size: 4rem;
+}
+
+.lottery-winner button {
+    width: 10rem;
+    height: 5rem;
+    font-size: 2rem;
+    margin: .5rem 0;
+    background-color: rgba(54, 207, 49,.7);
+    border: none;
+    font-weight: 900;
+    font-family:cursive;
+    cursor: pointer;
+}
+
+.lottery-winner button:hover {
+    background-color: rgba(54, 207, 49,.9);
+
+}
+
+@keyframes topAnimation {
+    100% {
+        transform: translateY(5rem);
+        transform: rotateY(160deg);
+    }
+}
+
+@keyframes rotatingAnimation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
