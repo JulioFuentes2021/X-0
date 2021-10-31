@@ -30,8 +30,8 @@ function Players() {
 
     return (
         <div className="selection-container fondo">
-        <h5 className="wrong">{error ? 'You must enter a name for both players and assure that names has 8 characters':''}</h5>
-            <form action="">
+            <h5 className="wrong">{error ? 'You must enter a name for both players and assure that names has 8 characters':''}</h5>
+            <form className="form">
                 <div className="player1">
                     <div className="name">
                         <label htmlFor="player1">Introduce the nickname for player 1</label>

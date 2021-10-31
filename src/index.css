@@ -1,3 +1,7 @@
 .fondo {
   background-color: #Eee;
 }
+
+body {
+  overflow-x: hidden;
+}
