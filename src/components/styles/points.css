@@ -10,7 +10,7 @@ html {
 
 .points-container {
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: flex-end;
 }
 
@@ -32,4 +32,10 @@ th {
 
 td {
     background-color: rgba(53, 241, 169,.2);
+}
+
+@media screen and (min-width:768px) {
+    .points-container {
+        display: flex;
+    }
 }
