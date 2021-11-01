@@ -8,7 +8,11 @@ html {
     font-size: 62.5%;
 }
 
+.arrival-container {
+    text-align: center;
+}
+
 .arrival-container span {
-    font-size: 4rem;
+    font-size: clamp(1rem,4rem,5rem);
     color: rgb(58, 197, 116);
 }
