@@ -15,7 +15,7 @@ html {
 }
 
 table {
-    width: 40rem;
+    width: clamp(15rem, 20rem,40rem);
     height: 5rem;
     margin: .5rem 1rem;
     text-align: center;
