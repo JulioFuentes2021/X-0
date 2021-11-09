@@ -1,9 +1,8 @@
 import React from 'react';
 import './styles/board.css';
-import { useState,useEffect } from 'react';
-import CoinFlip from './coin-flip';
+import { useState } from 'react';
 import Arrival from './players-arrival';
-import ReactDOM, { createPortal } from 'react-dom';
+import { createPortal } from 'react-dom';
 import Points from './points';
 import Results from './Results';
 
@@ -192,7 +191,7 @@ function Index(props) {
     if (Tie()) {
         console.log('eMPATE')
         setNumberOfGames(numberOfGames-1);
-        countGamesPerPlayer(numberOfGames,playerXPoints)
+        countGamesPerPlayer(numberOfGames,0)//Posible error
         console.log(numberOfGames)
     }
 

@@ -35,5 +35,5 @@ html {
 }
 
 .x {
-    font-size: clamp(1rem, 5vw, 20rem);
+    font-size: clamp(3rem, 5vw, 20rem);
 }

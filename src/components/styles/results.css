@@ -13,8 +13,9 @@ html {
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    font-size: 25rem;
+    font-size: clamp(5rem, 2vw, 25rem);
     background-color: #000;
     color: #fff;
     font-family: cursive;
@@ -29,7 +30,7 @@ html {
 }
 
 .name-result {
-    font-size: 10rem;
+    font-size: clamp(2rem, 5vw, 10rem);
 }
 
 .versus {
@@ -37,6 +38,10 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.versus-letters {
+    
 }
 
 .restart {
@@ -56,3 +61,12 @@ html {
     font-family:cursive;
 }
 
+@media screen and (min-width:764px) {
+    .results-container {
+        flex-direction: row;
+    }
+
+    .versus-letters {
+
+    }
+}

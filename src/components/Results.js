@@ -15,7 +15,7 @@ function Results(props) {
                 </div>
             </div>
             <div className="versus">
-                <div>
+                <div className="versus-letters">
                     <span>VS</span>
                 </div>
                 <div className="restart">
