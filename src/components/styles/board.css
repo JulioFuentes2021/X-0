@@ -20,9 +20,10 @@ html {
 }
 
 .board section div {
+    color: #fff;
     width: clamp(8rem, 3vw, 30rem);
     height: clamp(10rem, 3vw, 25rem);
-    background-color: #eee;
+    background-color: #222;
     margin: 1rem;
     cursor: pointer;
     display: flex;
